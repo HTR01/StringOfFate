@@ -16,13 +16,19 @@ public class AddLevelValue : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        LoadNextLevel.levelValue++;
+        if (other.gameObject.CompareTag("Player"))
+        {
+            LoadNextLevel.levelValue++;
+        }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D other)
     {
-        LoadNextLevel.levelValue--;
+        if (other.gameObject.CompareTag("Player"))
+        {
+            LoadNextLevel.levelValue--;
+        }
     }
 }

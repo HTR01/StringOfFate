@@ -7,7 +7,7 @@ public class ObjectClamp : MonoBehaviour
     public float minClamp;
     public float maxClamp;
 
-    float timeValue = 0.0f;
+    //float timeValue = 0.0f;
 
     void Start()
     {

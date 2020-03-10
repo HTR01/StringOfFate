@@ -9,10 +9,17 @@ public class PlayerMovement : MonoBehaviour
     public KeyCode Left;
     public KeyCode Right;
     public KeyCode Jump;
+    public KeyCode pickup;
+
+    //public PickUp pu;
+
+    bool objectCloseEnough;
+    public float pickupDistance;
+    Transform pickups;
 
     void Start()
-    {
-        
+    { 
+
     }
 
 
@@ -21,19 +28,19 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey(Right))
         {
-            this.transform.position += Vector3.right * 0.8f * Time.deltaTime;
+            this.transform.position += Vector3.right * 8f * Time.deltaTime;
         }
 
         if (Input.GetKey(Left))
         {
-            this.transform.position += Vector3.left * 0.8f * Time.deltaTime;
+            this.transform.position += Vector3.left * 8f * Time.deltaTime;
         }
 
         if (Input.GetKeyDown(Jump))
         {
             if (isGrounded)
             {
-                GetComponent<Rigidbody2D>().velocity = new Vector2(0, 2);
+                GetComponent<Rigidbody2D>().velocity = new Vector2(0, 6);
                 
 
                 isGrounded = false;
