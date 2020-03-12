@@ -27,7 +27,6 @@ public class ObjectPhysics : MonoBehaviour
     {
         //body.MovePosition(body.position + new Vector2(0, pickupAmount));
         body.constraints = RigidbodyConstraints2D.FreezePositionY;
-        body.constraints = RigidbodyConstraints2D.FreezeRotation;
         transform.parent = pickupPos.transform;
         transform.position = pickupPos.position;
         body.gravityScale = 0;
