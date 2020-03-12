@@ -9,14 +9,9 @@ public class PlayerMovement : MonoBehaviour
     public KeyCode Left;
     public KeyCode Right;
     public KeyCode Jump;
-    public KeyCode pickup;
+    
 
-    //public PickUp pu;
-
-    bool objectCloseEnough;
-    public float pickupDistance;
-    Transform pickups;
-
+    
     void Start()
     { 
 

@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &908023864839327886
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1806190075879059851}
+  m_Layer: 0
+  m_Name: PickUp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1806190075879059851
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908023864839327886}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.931, y: 0.118, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 388320907888985997}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2741947960640203358
 GameObject:
   m_ObjectHideFlags: 0
@@ -60,7 +90,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 612d04499a32d444db24e74b7563ce3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectCloseEnough: 0
 --- !u!1 &3690926488548439454
 GameObject:
   m_ObjectHideFlags: 0
@@ -97,6 +126,7 @@ Transform:
   - {fileID: 4618761377000434342}
   - {fileID: 4618761375778124447}
   - {fileID: 6840133904637539370}
+  - {fileID: 1806190075879059851}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -183,7 +213,6 @@ MonoBehaviour:
   Left: 97
   Right: 100
   Jump: 119
-  pickup: 101
   pickupDistance: 0
 --- !u!114 &5975384942721277464
 MonoBehaviour:
@@ -197,7 +226,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbcfc83829d649c468ad03a77b76afc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickupDistance: 0
+  OP: {fileID: 0}
+  pickup: 0
+  pickup2: 0
 --- !u!70 &6564175609185206313
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

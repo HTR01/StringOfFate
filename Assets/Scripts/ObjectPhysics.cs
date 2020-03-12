@@ -7,13 +7,14 @@ public class ObjectPhysics : MonoBehaviour
     
     public Rigidbody2D body;
     public float pickupAmount;
-
+    public Transform pickupPos;
     
 
 
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        
     }
 
 
@@ -24,6 +25,16 @@ public class ObjectPhysics : MonoBehaviour
 
     public void Pickup()
     {
-        body.MovePosition(body.position + new Vector2(0, pickupAmount));
+        //body.MovePosition(body.position + new Vector2(0, pickupAmount));
+        body.constraints = RigidbodyConstraints2D.FreezePositionY;
+        body.constraints = RigidbodyConstraints2D.FreezeRotation;
+        transform.parent = pickupPos.transform;
+        transform.position = pickupPos.position;
+        body.gravityScale = 0;
+    }
+
+    public void DropObject()
+    {
+        transform.parent = null;
     }
 }
