@@ -627,7 +627,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.55433846, g: 0.12758099, b: 0.5754717, a: 1}
+  m_Color: {r: 0.69330734, g: 0.26717696, b: 0.7169812, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1420,7 +1420,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1279672799}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.8412114, y: 0.29178822, z: 0.03614911}
   m_Children: []
@@ -1429,7 +1429,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 61.7, y: 0}
+  m_AnchoredPosition: {x: 61.700073, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1279672801
@@ -1445,9 +1445,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_color1: {r: 0.075649686, g: 0.6415094, b: 0.080918655, a: 1}
-  m_color2: {r: 0.764151, g: 0.09732112, b: 0.11752965, a: 1}
+  m_color2: {r: 1, g: 0.19607843, b: 0, a: 1}
+  width: 801
   m_angle: 90
-  m_ignoreRatio: 1
+  m_ignoreRatio: 0
 --- !u!114 &1279672802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1877,6 +1878,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1628090185}
   - component: {fileID: 1628090186}
+  - component: {fileID: 1628090187}
   m_Layer: 5
   m_Name: P1_Health_Bar
   m_TagString: Untagged
@@ -1957,6 +1959,18 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1628090187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628090184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9bee5260ee7adc44b46c588a94e990c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1687580513
 GameObject:
   m_ObjectHideFlags: 0

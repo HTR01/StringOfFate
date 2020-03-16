@@ -8,6 +8,7 @@ public class UIGradient : BaseMeshEffect
 {
     public Color m_color1 = Color.white;
     public Color m_color2 = Color.white;
+    public float width;
     [Range(-180f, 180f)]
     public float m_angle = 0f;
     public bool m_ignoreRatio = true;
@@ -17,6 +18,7 @@ public class UIGradient : BaseMeshEffect
         if(enabled)
         {
             Rect rect = graphic.rectTransform.rect;
+            rect.width = width;
             Vector2 dir = UIGradientUtils.RotationDir(m_angle);
 
             if (!m_ignoreRatio)
