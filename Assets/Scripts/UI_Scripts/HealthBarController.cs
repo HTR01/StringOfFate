@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Gradient_LeftClick : MonoBehaviour
+public class HealthBarController : MonoBehaviour
 {
     private Slider healthBar;
     private int currentHP = 100;
@@ -21,12 +21,5 @@ public class Gradient_LeftClick : MonoBehaviour
     public void changeHP(int dHP)
     {
         currentHP += dHP;
-    }
-
-    public void HealthDamage()
-    {
-        if(Input.GetMouseButtonDown(0))
-        {
-        }
     }
 }
