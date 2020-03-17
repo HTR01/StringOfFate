@@ -371,7 +371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.48860693, g: 0.09380562, b: 0.6415094, a: 1}
+  m_Color: {r: 0.6898396, g: 0.20803669, b: 0.8018868, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -592,6 +592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9bee5260ee7adc44b46c588a94e990c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentHP: 100
 --- !u!114 &485046527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -692,7 +693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.48860693, g: 0.09380562, b: 0.6415094, a: 1}
+  m_Color: {r: 0.6862745, g: 0.20784315, b: 0.8000001, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1044,6 +1045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92de097e8ddde9b4ba8ba07307688b6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rend: {fileID: 0}
 --- !u!1001 &929916493
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2055,6 +2057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9bee5260ee7adc44b46c588a94e990c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentHP: 100
 --- !u!1 &1687580513
 GameObject:
   m_ObjectHideFlags: 0
@@ -2267,8 +2270,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00286c7720b4ce7459ff7be9af7d15b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_color1: {r: 0.075649686, g: 0.6415094, b: 0.080918655, a: 1}
-  m_color2: {r: 1, g: 0.11792451, b: 0.26801327, a: 1}
+  m_color1: {r: 0.09132433, g: 0, b: 1, a: 1}
+  m_color2: {r: 1, g: 0.13679248, b: 0.20584902, a: 1}
   width: 801
   m_angle: 90
   m_ignoreRatio: 0

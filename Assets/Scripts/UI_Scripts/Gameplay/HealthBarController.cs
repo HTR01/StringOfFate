@@ -6,14 +6,14 @@ using UnityEngine.UI;
 public class HealthBarController : MonoBehaviour
 {
     private Slider healthBar;
-    private int currentHP = 100;
+    public int currentHP = 100;
 
     private void Awake()
     {
         healthBar = GetComponent<Slider>();
     }
 
-    private void Update()
+    public void Update()
     {
         healthBar.value = currentHP;
     }
