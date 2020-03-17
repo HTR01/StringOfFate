@@ -5,6 +5,7 @@ public class PickUp : MonoBehaviour
     public KeyCode pickup;
     public Transform pickupPos;
     public ObjectPhysics holding;
+    public DetectorPickUp detector;
 
     private void Start()
     {
@@ -13,10 +14,10 @@ public class PickUp : MonoBehaviour
 
     private void Update()
     {
-      if (Input.GetKeyDown(pickup) && DetectorPickUp.closestObject != null && holding == null)
+      if (Input.GetKeyDown(pickup) && detector.closestObject != null && holding == null)
        {
-            DetectorPickUp.closestObject.Pickup(pickupPos);
-            holding = DetectorPickUp.closestObject;
+            detector.closestObject.Pickup(pickupPos);
+            holding = detector.closestObject;
 
         }
         else if (Input.GetKeyDown(pickup) && holding != null)

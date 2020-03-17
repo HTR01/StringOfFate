@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
             if (isGrounded)
             {
                 GetComponent<Rigidbody2D>().velocity += new Vector2(0, jumpHeight);
-                
+                //this.transform.Translate(Vector2.up * jumpHeight * Time.deltaTime);
 
                 isGrounded = false;
                 

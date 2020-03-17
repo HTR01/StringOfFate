@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DetectorPickUp : MonoBehaviour
 {
-    public static ObjectPhysics closestObject;
+    public ObjectPhysics closestObject;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.GetComponent<ObjectPhysics>() != null)
