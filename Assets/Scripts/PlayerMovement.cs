@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     public KeyCode Left;
     public KeyCode Right;
     public KeyCode Jump;
+
+    public float jumpHeight;
     
 
     
@@ -35,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (isGrounded)
             {
-                GetComponent<Rigidbody2D>().velocity = new Vector2(0, 6);
+                GetComponent<Rigidbody2D>().velocity += new Vector2(0, jumpHeight);
                 
 
                 isGrounded = false;
