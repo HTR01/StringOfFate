@@ -26,11 +26,13 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(Right))
         {
             this.transform.position += Vector3.right * 8f * Time.deltaTime;
+            transform.rotation = Quaternion.Euler(0, 0, 0);
         }
 
         if (Input.GetKey(Left))
         {
             this.transform.position += Vector3.left * 8f * Time.deltaTime;
+            transform.rotation = Quaternion.Euler(0, 180, 0);
         }
 
         if (Input.GetKeyDown(Jump))
