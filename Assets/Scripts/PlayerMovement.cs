@@ -23,30 +23,35 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-
+        var horiz = 0;
         var body = GetComponent<Rigidbody2D>();
         if (Input.GetKey(Right))
         {
-            //body.velocity = Vector2.right * speed * Time.deltaTime;
-            body.velocity = new Vector2(speed * Time.deltaTime, body.velocity.y);
-            transform.rotation = Quaternion.Euler(0, 0, 0);
+           horiz += 1;
         }
 
         if (Input.GetKey(Left))
         {
-            //body.velocity = Vector2.left * speed * Time.deltaTime;
-            body.velocity = new Vector2(-speed * Time.deltaTime, body.velocity.y);
+            horiz -= 1;
+        }
+
+        if (horiz == 1)
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+
+        if (horiz == -1)
+        {
             transform.rotation = Quaternion.Euler(0, 180, 0);
         }
+
+        body.velocity = new Vector2(horiz * speed, body.velocity.y);
 
         if (Input.GetKeyDown(Jump))
         {
             if (isGrounded)
             {
                 body.velocity = new Vector2(body.velocity.x, jumpHeight);
-                //this.transform.Translate(Vector2.up * jumpHeight * Time.deltaTime);
-
-                
 
                 isGrounded = false;
                 
