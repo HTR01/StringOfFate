@@ -362,7 +362,7 @@ MonoBehaviour:
   Left: 97
   Right: 100
   Jump: 119
-  jumpHeight: 20
+  jumpHeight: 23
   speed: 400
 --- !u!70 &5930645415099124718
 CapsuleCollider2D:
