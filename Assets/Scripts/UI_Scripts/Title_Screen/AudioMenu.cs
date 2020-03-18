@@ -9,7 +9,7 @@ public class AudioMenu : MonoBehaviour
 
     public void SetMasterVolume(float volume)
     {
-        Debug.Log(volume);
+        audioMixer.SetFloat("MasterVolume", volume);
     }
 
     public void SetEffectsVolume(float volume)
