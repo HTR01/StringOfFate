@@ -5,20 +5,22 @@ using UnityEngine.Audio;
 
 public class AudioMenu : MonoBehaviour
 {
-    public AudioMixer audioMixer;
+    public AudioMixer masterMixer;
+    public AudioMixer effectMixer;
+    public AudioMixer musicMixer;
 
     public void SetMasterVolume(float volume)
     {
-        audioMixer.SetFloat("MasterVolume", volume);
+        masterMixer.SetFloat("MasterVolume", volume);
     }
 
     public void SetEffectsVolume(float volume)
     {
-        Debug.Log(volume);
+        effectMixer.SetFloat("EffectVolume", volume);
     }
 
     public void SetMusicVolume(float volume)
     {
-        Debug.Log(volume);
+        musicMixer.SetFloat("MusicVolume", volume);
     }
 }
