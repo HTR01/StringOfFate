@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 5930645414288852419}
   - component: {fileID: 5930645414288852417}
   - component: {fileID: 5930645414288852416}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Grabber
   m_TagString: Untagged
   m_Icon: {fileID: 0}

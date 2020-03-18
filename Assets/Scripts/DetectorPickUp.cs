@@ -10,7 +10,7 @@ public class DetectorPickUp : MonoBehaviour
         if (collision.gameObject.GetComponent<ObjectPhysics>() != null)
         {
             closestObject = collision.gameObject.GetComponent<ObjectPhysics>();
-            Debug.Log("Not null");
+            
         }
     }
 
@@ -19,7 +19,7 @@ public class DetectorPickUp : MonoBehaviour
         if (collision.gameObject.GetComponent<ObjectPhysics>() == closestObject)
         {
             closestObject = null;
-            Debug.Log("Null");
+            
         }
     }
 }

@@ -82,7 +82,7 @@ GameObject:
   - component: {fileID: 6915983862083535401}
   - component: {fileID: 6915983862083535403}
   - component: {fileID: 6915983862083535402}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Grabber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
