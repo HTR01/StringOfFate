@@ -27,13 +27,15 @@ public class PlayerMovement : MonoBehaviour
         var body = GetComponent<Rigidbody2D>();
         if (Input.GetKey(Right))
         {
-            body.velocity = Vector2.right * speed * Time.deltaTime;
+            //body.velocity = Vector2.right * speed * Time.deltaTime;
+            body.velocity = new Vector2(speed * Time.deltaTime, body.velocity.y);
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
 
         if (Input.GetKey(Left))
         {
-            body.velocity = Vector2.left * speed * Time.deltaTime;
+            //body.velocity = Vector2.left * speed * Time.deltaTime;
+            body.velocity = new Vector2(-speed * Time.deltaTime, body.velocity.y);
             transform.rotation = Quaternion.Euler(0, 180, 0);
         }
 
