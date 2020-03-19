@@ -19,6 +19,9 @@ public class spikeMovement : MonoBehaviour
     void Update()
     {
         if (this.transform.position.y == )
+        {
+
+        }
     }
 
     IEnumerator spikeAni()
