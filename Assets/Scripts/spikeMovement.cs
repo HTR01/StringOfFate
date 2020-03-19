@@ -18,10 +18,10 @@ public class spikeMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (this.transform.position.y == )
+       /* if (this.transform.position.y == )
         {
 
-        }
+        }*/
     }
 
     IEnumerator spikeAni()
