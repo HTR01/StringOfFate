@@ -214,7 +214,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1132a7ae77ee74a4e895fc0d6124f508, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -319,7 +319,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1132a7ae77ee74a4e895fc0d6124f508, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -390,7 +390,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4235257867233844439}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -123.26, y: -1.819, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3072136, y: 0.3072136, z: 0.3072136}
   m_Children:
   - {fileID: 2408624650605123381}
@@ -413,7 +413,8 @@ GameObject:
   - component: {fileID: 1141605881872497828}
   - component: {fileID: 6695522146808643677}
   - component: {fileID: 8735022059247703305}
-  m_Layer: 10
+  - component: {fileID: 432122809}
+  m_Layer: 9
   m_Name: transportTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -506,3 +507,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.99999994}
   m_EdgeRadius: 0
+--- !u!114 &432122809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4960596138137252993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 674c27ac3c9e71c41a2404625d2914fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickupFab: {fileID: 4783470024790665382, guid: 9b21cf38b19df8d40aa122090137eba4,
+    type: 3}
+  telePos: {fileID: 0}
