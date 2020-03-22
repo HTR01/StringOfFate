@@ -1,14 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class spikeTrap : MonoBehaviour
+public class checkpointManager : MonoBehaviour
 {
     public checkpoints checkP;
-   
 
-    // Start is called before the first frame update
     void Start()
     {
         
@@ -20,15 +17,13 @@ public class spikeTrap : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            checkP.Respawn();
-            Debug.Log("Respawned");
-            
+            checkP.checkpoint = this.gameObject;
+            checkP.setCheckpoint();
+            Debug.Log("Set checkpoint");
         }
     }
-
-    
 }

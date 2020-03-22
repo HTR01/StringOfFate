@@ -6,7 +6,7 @@ public class checkpoints : MonoBehaviour
 {
     public Transform currentCheck;
     public GameObject checkpoint;
-    
+    public GameObject player;
 
     void Start()
     {
@@ -22,8 +22,14 @@ public class checkpoints : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void setCheckpoint()
     {
         currentCheck = checkpoint.transform;
+    }
+
+    public void Respawn()
+    {
+        //Instantiate(player, checkpoint.transform);
+        player.transform.position = checkpoint.transform.position;
     }
 }
