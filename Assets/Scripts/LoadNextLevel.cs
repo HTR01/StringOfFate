@@ -25,7 +25,7 @@ public class LoadNextLevel : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            SceneManager.LoadScene(levelToLoad);
+            //SceneManager.LoadScene(levelToLoad);
         }
     }
 }

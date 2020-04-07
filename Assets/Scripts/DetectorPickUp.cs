@@ -4,22 +4,22 @@ using UnityEngine;
 
 public class DetectorPickUp : MonoBehaviour
 {
-    public static  PickUp closestObject;
+    public ObjectPhysics closestObject;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponent<PickUp>() != null)
+        if (collision.gameObject.GetComponent<ObjectPhysics>() != null)
         {
-            closestObject = collision.gameObject.GetComponent<PickUp>();
-            Debug.Log("Not null");
+            closestObject = collision.gameObject.GetComponent<ObjectPhysics>();
+            
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponent<PickUp>() == closestObject)
+        if (collision.gameObject.GetComponent<ObjectPhysics>() == closestObject)
         {
             closestObject = null;
-            Debug.Log("Null");
+            
         }
     }
 }

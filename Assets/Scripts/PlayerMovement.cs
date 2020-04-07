@@ -9,6 +9,9 @@ public class PlayerMovement : MonoBehaviour
     public KeyCode Left;
     public KeyCode Right;
     public KeyCode Jump;
+
+    public float jumpHeight;
+    public float speed;
     
 
     
@@ -20,23 +23,35 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-
+        var horiz = 0;
+        var body = GetComponent<Rigidbody2D>();
         if (Input.GetKey(Right))
         {
-            this.transform.position += Vector3.right * 8f * Time.deltaTime;
+           horiz += 1;
         }
 
         if (Input.GetKey(Left))
         {
-            this.transform.position += Vector3.left * 8f * Time.deltaTime;
+            horiz -= 1;
         }
+
+        if (horiz == 1)
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+
+        if (horiz == -1)
+        {
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
+
+        body.velocity = new Vector2(horiz * speed, body.velocity.y);
 
         if (Input.GetKeyDown(Jump))
         {
             if (isGrounded)
             {
-                GetComponent<Rigidbody2D>().velocity = new Vector2(0, 6);
-                
+                body.velocity = new Vector2(body.velocity.x, jumpHeight);
 
                 isGrounded = false;
                 
