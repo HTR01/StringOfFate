@@ -31,16 +31,17 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    public void InGameUI()
-    {
-        if(GameIsPaused)
-        {
-            inGameUI.SetActive(false);
-        }
-        else
-        {
-            inGameUI.SetActive(true);
-        }
+    public void InGameUI()
+    {
+        if(GameIsPaused)
+        {
+
+            inGameUI.SetActive(false);
+        }
+        else
+        {
+            inGameUI.SetActive(true);
+        }
     }
 
     public void Resume()
