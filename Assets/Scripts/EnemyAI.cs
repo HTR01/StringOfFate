@@ -18,11 +18,21 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (detect.isClose)
+        if (detect.isClose /*&& Time.timeScale == 1*/)
         {
             Debug.Log("Moving");
             //monPos = mon.transform;
-            transform.position = Vector2.MoveTowards(mon.transform.position, player.transform.position, moveSpeed);
-        }   
+            transform.position = Vector2.MoveTowards(mon.transform.position, player.transform.position, moveSpeed * Time.deltaTime);
+        }  
+        
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            Time.timeScale = 0;
+        }
+
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            Time.timeScale = 1;
+        }
     }
 }

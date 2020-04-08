@@ -3152,7 +3152,7 @@ MonoBehaviour:
   detect: {fileID: 1080464825}
   mon: {fileID: 1326321971}
   player: {fileID: 1848728219}
-  moveSpeed: 0.05
+  moveSpeed: 1
 --- !u!4 &1338582717 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7516624536583703056, guid: 1006dca90ee6aa64e83fa7cf5f98fcc3,
