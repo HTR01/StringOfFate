@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class HealthBarController : MonoBehaviour
 {
-    private Slider healthBar;
+    public Slider healthBar;
     public int currentHP = 100;
 
     private void Awake()
