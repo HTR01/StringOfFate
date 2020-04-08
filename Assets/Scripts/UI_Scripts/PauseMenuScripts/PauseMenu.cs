@@ -12,7 +12,7 @@ public class PauseMenu : MonoBehaviour
     private void Start()
     {
         pauseMenuUI.SetActive(false);
-        inGameUI.SetActive(true);
+        /*inGameUI.SetActive(true);*/
     }
 
     // Update is called once per frame
@@ -31,7 +31,7 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    public void InGameUI()
+    /*public void InGameUI()
     {
         if(GameIsPaused)
         {
@@ -42,7 +42,7 @@ public class PauseMenu : MonoBehaviour
         {
             inGameUI.SetActive(true);
         }
-    }
+    }*/
 
     public void Resume()
     {

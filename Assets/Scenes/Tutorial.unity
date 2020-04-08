@@ -3731,7 +3731,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &586543281
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9174,7 +9174,7 @@ MonoBehaviour:
   detect: {fileID: 1080464825}
   mon: {fileID: 1326321971}
   player: {fileID: 1848728219}
-  moveSpeed: 0.05
+  moveSpeed: 1
 --- !u!1 &1328912620
 GameObject:
   m_ObjectHideFlags: 0
@@ -9705,7 +9705,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1459622162
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13517,7 +13517,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2002374708
 RectTransform:
   m_ObjectHideFlags: 0

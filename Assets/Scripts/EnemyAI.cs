@@ -22,7 +22,7 @@ public class EnemyAI : MonoBehaviour
         {
             Debug.Log("Moving");
             //monPos = mon.transform;
-            transform.position = Vector2.MoveTowards(mon.transform.position, player.transform.position, moveSpeed);
+            transform.position = Vector2.MoveTowards(mon.transform.position, player.transform.position, moveSpeed * Time.deltaTime);
         }   
     }
 }
