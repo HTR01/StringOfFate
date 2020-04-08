@@ -8,11 +8,12 @@ public class EnemyAI : MonoBehaviour
     public GameObject mon;
     public GameObject player;
     public float moveSpeed;
+    public Vector2 home;
     //Transform monPos;
 
     void Start()
     {
-        
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
@@ -21,10 +22,16 @@ public class EnemyAI : MonoBehaviour
         if (detect.isClose /*&& Time.timeScale == 1*/)
         {
             Debug.Log("Moving");
-            //monPos = mon.transform;
+            
             transform.position = Vector2.MoveTowards(mon.transform.position, player.transform.position, moveSpeed * Time.deltaTime);
-        }  
-        
+        }
+        if (!detect.isClose )
+        {
+            Debug.Log("Going home");
+            
+            transform.position = Vector2.MoveTowards(mon.transform.position, home, moveSpeed * Time.deltaTime);
+        }
+
         if (Input.GetKeyDown(KeyCode.K))
         {
             Time.timeScale = 0;
