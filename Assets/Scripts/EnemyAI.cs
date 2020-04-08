@@ -9,7 +9,7 @@ public class EnemyAI : MonoBehaviour
     public GameObject player;
     public float moveSpeed;
     public Vector2 home;
-    //Transform monPos;
+    public checkpoints checkP;
 
     void Start()
     {
@@ -40,6 +40,16 @@ public class EnemyAI : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.L))
         {
             Time.timeScale = 1;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            checkP.Respawn();
+            Debug.Log("Respawned");
+
         }
     }
 }
