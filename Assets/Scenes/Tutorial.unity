@@ -2464,6 +2464,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 320020328}
   m_CullTransparentMesh: 0
+--- !u!1 &350298232 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6915983862881717311, guid: 178d46b8bf0f3054e939b27cbacf2c1a,
+    type: 3}
+  m_PrefabInstance: {fileID: 7349421178550515664}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &350298238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350298232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f38c7efd3219a7145a464b4ef9c9b219, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health:
+    bar: {fileID: 1468621258}
+    maxVal: 100
+    currentVal: 100
+  checkP: {fileID: 1839332421}
 --- !u!1001 &353543975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7232,6 +7255,7 @@ MonoBehaviour:
     bar: {fileID: 1468621258}
     maxVal: 100
     currentVal: 100
+  checkP: {fileID: 0}
 --- !u!4 &1159943177
 Transform:
   m_ObjectHideFlags: 0
@@ -11994,7 +12018,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 7349421178550515664}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 350298232}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5c128c39fdea3774cac8c349102eb328, type: 3}
@@ -12272,6 +12296,23 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5930645414569811662}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1878250785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878250779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f38c7efd3219a7145a464b4ef9c9b219, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health:
+    bar: {fileID: 1468621258}
+    maxVal: 100
+    currentVal: 100
+  checkP: {fileID: 5930645415732717036}
 --- !u!1001 &1887506976
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14062,6 +14103,11 @@ PrefabInstance:
     - target: {fileID: 3784548405883167624, guid: 30ba39d810d00324d85f79b38684844b,
         type: 3}
       propertyPath: m_Name
+      value: Monster
+      objectReference: {fileID: 0}
+    - target: {fileID: 3784548405883167624, guid: 30ba39d810d00324d85f79b38684844b,
+        type: 3}
+      propertyPath: m_TagString
       value: Monster
       objectReference: {fileID: 0}
     - target: {fileID: 206659127436972443, guid: 30ba39d810d00324d85f79b38684844b,

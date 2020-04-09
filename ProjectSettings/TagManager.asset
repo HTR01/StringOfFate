@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ground
   - Pickup
+  - Monster
   layers:
   - Default
   - TransparentFX
