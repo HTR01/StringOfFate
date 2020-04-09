@@ -12,7 +12,7 @@ public class PauseMenu : MonoBehaviour
     private void Start()
     {
         pauseMenuUI.SetActive(false);
-        /*inGameUI.SetActive(true);*/
+        inGameUI.SetActive(true);
     }
 
     // Update is called once per frame
@@ -31,22 +31,10 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    /*public void InGameUI()
-    {
-        if(GameIsPaused)
-        {
-
-            inGameUI.SetActive(false);
-        }
-        else
-        {
-            inGameUI.SetActive(true);
-        }
-    }*/
-
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
+        inGameUI.SetActive(true);
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
@@ -54,9 +42,10 @@ public class PauseMenu : MonoBehaviour
     public void Pause()
     {
         pauseMenuUI.SetActive(true);
+        inGameUI.SetActive(false);
         Time.timeScale = 0f;
         GameIsPaused = true;
-    }
+    } 
 
     public void LoadSettings()
     {
