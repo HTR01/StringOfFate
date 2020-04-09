@@ -51,8 +51,8 @@ public class HealthBarController : MonoBehaviour
         return (value - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
     }
 
-    public void changeHP(int dHP)
+    /*public void changeHP(int dHP)
     {
         currentHP += dHP;
-    }
+    }*/
 }
