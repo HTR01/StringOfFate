@@ -42,14 +42,4 @@ public class EnemyAI : MonoBehaviour
             Time.timeScale = 1;
         }
     }
-
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            checkP.Respawn();
-            Debug.Log("Respawned");
-
-        }
-    }
 }

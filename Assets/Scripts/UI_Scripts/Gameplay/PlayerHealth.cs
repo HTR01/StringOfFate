@@ -39,5 +39,7 @@ public class PlayerHealth : MonoBehaviour
             Debug.Log("Took damage");
             health.CurrentVal -= 30;
         }
+
+        
     }
 }
