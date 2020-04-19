@@ -18,9 +18,9 @@ public class LoadNextLevel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(neededLevelValue == levelValue)
+        if(levelValue == 2)
         {
-            SceneManager.LoadScene(levelToLoad);
+            SceneManager.LoadScene(2);
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
