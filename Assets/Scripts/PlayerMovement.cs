@@ -12,18 +12,18 @@ public class PlayerMovement : MonoBehaviour
 
     public float jumpHeight;
     public float speed;
-    
+    public int horiz;
 
     
     void Start()
-    { 
-
+    {
+        horiz = 0;
     }
 
 
     void Update()
     {
-        var horiz = 0;
+        horiz = 0;
         var body = GetComponent<Rigidbody2D>();
         if (Input.GetKey(Right))
         {
@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (horiz == 1)
         {
-            transform.rotation = Quaternion.Euler(0, 0, 0);
+            transform.rotation = Quaternion.Euler(0, 0, 0); 
         }
 
         if (horiz == -1)
@@ -54,7 +54,6 @@ public class PlayerMovement : MonoBehaviour
                 body.velocity = new Vector2(body.velocity.x, jumpHeight);
 
                 isGrounded = false;
-                
             }
         }
     }

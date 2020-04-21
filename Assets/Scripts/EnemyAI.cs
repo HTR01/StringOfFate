@@ -13,7 +13,7 @@ public class EnemyAI : MonoBehaviour
 
     void Start()
     {
-        Time.timeScale = 1;
+        
     }
 
     // Update is called once per frame
@@ -24,12 +24,14 @@ public class EnemyAI : MonoBehaviour
             Debug.Log("Moving");
             
             transform.position = Vector2.MoveTowards(mon.transform.position, player.transform.position, moveSpeed * Time.deltaTime);
+            transform.rotation = Quaternion.Euler(0, -90, 0);
         }
         if (!detect.isClose )
         {
             Debug.Log("Going home");
             
             transform.position = Vector2.MoveTowards(mon.transform.position, home, moveSpeed * Time.deltaTime);
+            transform.rotation = Quaternion.Euler(0, 90, 0);
         }
 
         if (Input.GetKeyDown(KeyCode.K))
