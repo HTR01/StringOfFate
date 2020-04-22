@@ -29,16 +29,24 @@ public class PlayerMovement : MonoBehaviour
             horiz += 1;
             anim.SetBool("Slow Run", true);
         }
-        else
+
+        if (Input.GetKeyUp(Right))
         {
+            horiz = 0;
             anim.SetBool("Slow Run", false);
         }
-
+        
 
         if (Input.GetKey(Left))
         {
             horiz -= 1;
             anim.SetBool("Slow Run", true);
+        }
+
+        if (Input.GetKeyUp(Left))
+        {
+            horiz = 0;
+            anim.SetBool("Slow Run", false);
         }
 
         if (horiz == 1)
@@ -50,7 +58,8 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(0, 180, 0);
         }
-        else
+        
+        else if (horiz == 0)
         {
             anim.SetBool("Slow Run", false);
         }
