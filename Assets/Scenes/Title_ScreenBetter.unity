@@ -1142,8 +1142,29 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1277970972382226464, guid: f15ce1eccad304d469e40ee339e695be,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2476
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277970972382226464, guid: f15ce1eccad304d469e40ee339e695be,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2135525
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277970973767083142, guid: f15ce1eccad304d469e40ee339e695be,
+        type: 3}
+      propertyPath: m_HandleRect
+      value: 
+      objectReference: {fileID: 826775470}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f15ce1eccad304d469e40ee339e695be, type: 3}
+--- !u!224 &826775470 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1277970972382226464, guid: f15ce1eccad304d469e40ee339e695be,
+    type: 3}
+  m_PrefabInstance: {fileID: 826775469}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &844392541
 GameObject:
   m_ObjectHideFlags: 0
