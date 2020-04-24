@@ -40,6 +40,12 @@ public class PlayerHealth : MonoBehaviour
             health.CurrentVal -= 30;
         }
 
-        
+        if (other.gameObject.CompareTag("Spike"))
+        {
+            Debug.Log("Took damage");
+            health.CurrentVal -= 100;
+        }
+
+
     }
 }
