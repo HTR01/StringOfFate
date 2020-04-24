@@ -1142,6 +1142,16 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1277970973387146009, guid: f15ce1eccad304d469e40ee339e695be,
+        type: 3}
+      propertyPath: m_Value
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277970973423731681, guid: f15ce1eccad304d469e40ee339e695be,
+        type: 3}
+      propertyPath: m_Value
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 1277970972382226464, guid: f15ce1eccad304d469e40ee339e695be,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1157,6 +1167,11 @@ PrefabInstance:
       propertyPath: m_HandleRect
       value: 
       objectReference: {fileID: 826775470}
+    - target: {fileID: 1277970973767083142, guid: f15ce1eccad304d469e40ee339e695be,
+        type: 3}
+      propertyPath: m_Value
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f15ce1eccad304d469e40ee339e695be, type: 3}
 --- !u!224 &826775470 stripped
