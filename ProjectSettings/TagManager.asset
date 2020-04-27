@@ -7,6 +7,7 @@ TagManager:
   - ground
   - Pickup
   - Monster
+  - Spike
   layers:
   - Default
   - TransparentFX
