@@ -4,24 +4,23 @@ using UnityEngine;
 
 public class PushPlatform : MonoBehaviour
 {
-    int pressureNumber = 0;
+    public int pressureNumber = 0;
 
     public PlatformController platCont;
-   
 
-   
+
     void FixedUpdate()
     {
         if(pressureNumber == 1)
         {
             platCont.RaisePlatform();
+            
         }
         if(pressureNumber == 0)
         {
             platCont.LowerPlatform();
-        }
-       
-        
+            
+        } 
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -33,4 +32,6 @@ public class PushPlatform : MonoBehaviour
     {
         pressureNumber = 0;
     }
+
+   
 }

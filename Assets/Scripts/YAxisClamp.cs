@@ -10,10 +10,13 @@ public class YAxisClamp : MonoBehaviour
     private float minValue;
     private float maxValue;
 
-    //float timeValue = 0.0f;
+    
+    private PlatformController pc;
 
     void Start()
     {
+        pc = GetComponent<PlatformController>();
+
         var startY = transform.position.y;
         var changedY = startY + maxChange;
         if (startY < changedY)
@@ -26,6 +29,8 @@ public class YAxisClamp : MonoBehaviour
             minValue = changedY;
             maxValue = startY;
         }
+
+
     }
 
     // Update is called once per frame
@@ -36,6 +41,17 @@ public class YAxisClamp : MonoBehaviour
         var position = transform.position;
 
         float yPos = Mathf.Clamp(position.y, minValue, maxValue);
+
+        if( yPos == maxValue)
+        {
+            pc.maxReached = true;
+            
+        }
+
+        if (yPos == minValue)
+        {
+            pc.minReached = true;
+        }
 
         
         transform.position = new Vector2(position.x, yPos);
