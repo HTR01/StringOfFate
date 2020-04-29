@@ -63,7 +63,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ULTRA
+  m_text: VERY LOW
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dd6f38cd177de3b4a94c49c6365e2d0e, type: 2}
   m_sharedMaterial: {fileID: 1157640853672687959, guid: dd6f38cd177de3b4a94c49c6365e2d0e,
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 35.55
+  m_fontSize: 27
   m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -133,10 +133,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1277970972107893523}
-    characterCount: 5
+    characterCount: 8
     spriteCount: 0
-    spaceCount: 0
-    wordCount: 1
+    spaceCount: 1
+    wordCount: 2
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -693,8 +693,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -275, y: -104.2}
-  m_SizeDelta: {x: 84.2, y: 48.4}
+  m_AnchoredPosition: {x: -278.9, y: -104.2}
+  m_SizeDelta: {x: 76.4, y: 48.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1277970972245366295
 CanvasRenderer:
@@ -2193,7 +2193,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Option A
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dd6f38cd177de3b4a94c49c6365e2d0e, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2271,7 +2271,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -3036,7 +3036,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Option A
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: dd6f38cd177de3b4a94c49c6365e2d0e, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3114,7 +3114,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -5338,6 +5338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ccc5b48f7a7ab34db764d483dcadd79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  qualityDropdown: {fileID: 1277970973751327811}
   resolutionDropdown: {fileID: 1277970973346682723}
 --- !u!1 &1277970973163996062
 GameObject:
@@ -7756,7 +7757,7 @@ MonoBehaviour:
   m_CaptionImage: {fileID: 0}
   m_ItemText: {fileID: 1277970972721910855}
   m_ItemImage: {fileID: 0}
-  m_Value: 5
+  m_Value: 0
   m_Options:
     m_Options:
     - m_Text: VERY LOW
