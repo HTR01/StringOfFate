@@ -8,6 +8,7 @@ public class VideoMenu : MonoBehaviour
 {
     Resolution[] resolutions;
 
+    public TMP_Dropdown qualityDropdown;
     public TMP_Dropdown resolutionDropdown;
 
     private void Start()
@@ -33,11 +34,15 @@ public class VideoMenu : MonoBehaviour
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
+
+        int Quality = PlayerPrefs.GetInt("_qualityIndex", 0);
+        qualityDropdown.value = Quality;
     }
 
     public void SetQuality (int qualityIndex)
     {
         QualitySettings.SetQualityLevel(qualityIndex);
+        PlayerPrefs.SetInt("_qualityIndex", qualityIndex);
     }
 
     public void SetFullscreen (bool isFullscreen)
