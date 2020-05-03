@@ -8,6 +8,8 @@ public class PlatformController : MonoBehaviour
     public float lowerAmount;
 
     private Rigidbody2D body;
+    public bool maxReached;
+    public bool minReached;
 
     private void Start()
     {
@@ -21,16 +23,18 @@ public class PlatformController : MonoBehaviour
 
     public void RaisePlatform()
     {
-        body.MovePosition(body.position + new Vector2(0, raiseAmount * Time.deltaTime));
+        if (maxReached == false) { 
+            body.MovePosition(body.position + new Vector2(0, raiseAmount * Time.deltaTime));
+        }
+        minReached = false;
     }
 
     public void LowerPlatform()
     {
-        body.MovePosition(body.position + new Vector2(0, lowerAmount * Time.deltaTime));
-    }
+        if (minReached == false) {
+            body.MovePosition(body.position + new Vector2(0, lowerAmount * Time.deltaTime));
+        }
 
-    public void StaticPlatform()
-    {
-        body.MovePosition(body.position + new Vector2(0, 0));
+        maxReached = false;
     }
 }

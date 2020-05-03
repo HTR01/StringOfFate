@@ -24,14 +24,14 @@ public class EnemyAI : MonoBehaviour
             Debug.Log("Moving");
             
             transform.position = Vector2.MoveTowards(mon.transform.position, player.transform.position, moveSpeed * Time.deltaTime);
-            transform.rotation = Quaternion.Euler(0, -90, 0);
+            //transform.rotation = Quaternion.Euler(0, -90, 0);
         }
         if (!detect.isClose )
         {
             Debug.Log("Going home");
             
             transform.position = Vector2.MoveTowards(mon.transform.position, home, moveSpeed * Time.deltaTime);
-            transform.rotation = Quaternion.Euler(0, 90, 0);
+            //transform.rotation = Quaternion.Euler(0, 90, 0);
         }
 
         if (Input.GetKeyDown(KeyCode.K))
@@ -43,5 +43,7 @@ public class EnemyAI : MonoBehaviour
         {
             Time.timeScale = 1;
         }
+
+        transform.LookAt(player.transform);
     }
 }
