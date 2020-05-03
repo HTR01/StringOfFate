@@ -729,52 +729,105 @@ PrefabInstance:
     - target: {fileID: 7075560526591279168, guid: fbfadfec949d5f546b90cee91fbb6064,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 62
       objectReference: {fileID: 0}
     - target: {fileID: 7075560526591279168, guid: fbfadfec949d5f546b90cee91fbb6064,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 0
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7075560526591279168, guid: fbfadfec949d5f546b90cee91fbb6064,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7075560526591279168, guid: fbfadfec949d5f546b90cee91fbb6064,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7075560526591279168, guid: fbfadfec949d5f546b90cee91fbb6064,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7075560526591279168, guid: fbfadfec949d5f546b90cee91fbb6064,
+        type: 3}
+      propertyPath: m_text
+      value: 'Creative Director
+
+
+
+        Programming
+
+
+
+        Art
+
+
+
+
+        Audio
+
+
+        Character Rig
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 7075560527477714344, guid: fbfadfec949d5f546b90cee91fbb6064,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 171
       objectReference: {fileID: 0}
     - target: {fileID: 7075560527477714344, guid: fbfadfec949d5f546b90cee91fbb6064,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 0
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 7075560527477714344, guid: fbfadfec949d5f546b90cee91fbb6064,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 7075560527477714344, guid: fbfadfec949d5f546b90cee91fbb6064,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 7075560527477714344, guid: fbfadfec949d5f546b90cee91fbb6064,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7075560527477714344, guid: fbfadfec949d5f546b90cee91fbb6064,
+        type: 3}
+      propertyPath: m_text
+      value: 'Christa Hammer Christiansen
+
+
+
+
+        Zach Stott
+
+        Aidan Robinson
+
+
+
+        Ariel Chen
+
+        Christa Hammer Christiansen
+
+        Drina Domancic Mandiola
+
+
+
+        https://soundcloud.com/unayden
+
+
+
+        Conor Pilcher
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 7075560527827867632, guid: fbfadfec949d5f546b90cee91fbb6064,
         type: 3}
@@ -805,6 +858,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7075560527477714345, guid: fbfadfec949d5f546b90cee91fbb6064,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -24
+      objectReference: {fileID: 0}
+    - target: {fileID: 7075560527827867633, guid: fbfadfec949d5f546b90cee91fbb6064,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 173.90001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7075560526591279169, guid: fbfadfec949d5f546b90cee91fbb6064,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 6.2500057
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbfadfec949d5f546b90cee91fbb6064, type: 3}
