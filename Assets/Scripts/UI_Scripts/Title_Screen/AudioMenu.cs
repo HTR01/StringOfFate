@@ -19,8 +19,8 @@ public class AudioMenu : MonoBehaviour
         effectMixer.SetFloat("EffectVolume", volume);
     }
 
-    public void SetMusicVolume(float volume)
+    public void SetMusicVolume(float sliderValue)
     {
-        musicMixer.SetFloat("MusicVolume", volume);
+        musicMixer.SetFloat("MusicVolume", Mathf.Log10 (sliderValue) * 20);
     }
 }
