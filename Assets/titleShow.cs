@@ -16,7 +16,7 @@ public class titleShow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.anyKeyDown)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             credits.SetActive(false);
             title.SetActive(true);
